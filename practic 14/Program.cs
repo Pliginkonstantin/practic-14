@@ -7,40 +7,24 @@ using System.Threading.Tasks;
 namespace practic_14
 {
     /// <summary>
-    /// Задание 1. Вывести на экран в столбик первые 10 натуральных чисел (циклы с условием, цикл с параметром)
+    /// Задание 2. Вывести на экран целые числа из интервала от 1 до n (цикл с параметром)
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Func();
-            Console.Read();
+            int n = InputIntNumber("введите значение : ");
+            Func(n);
+            Console.ReadLine();
         }
-        //static void Func()
-        //{
-        //    int x = 1;
-        //    while (x <= 10)
-        //    {
-        //        Console.WriteLine(x);
-        //        x++;
-        //    }
-        //}
-
-        //static void Func()
-        //{
-        //    int x = 1;
-        //    do
-        //    {
-        //        Console.WriteLine(x);
-        //        x++;
-        //    }
-        //    while (x <= 10);
-        //}
-
-        static void Func()
+        static int InputIntNumber(string message)
         {
-            
-            for (int x = 10; x >= 1 ; x--)
+            Console.Write(message);
+            return int.Parse(Console.ReadLine());
+        }
+        static void Func(int n)
+        {
+            for (int x = 0; x <= n; x++)
             {
                 Console.WriteLine(x);
             }
