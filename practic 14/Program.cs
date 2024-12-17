@@ -7,42 +7,22 @@ using System.Threading.Tasks;
 namespace practic_14
 {
     /// <summary>
-    /// Задание 1. Вывести на экран в столбик первые 10 натуральных чисел (циклы с условием, цикл с параметром)
+    /// Задание 3. Вывести в столбик 5 раз слово «Привет!» (циклы с условием)
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Func();
-            Console.Read();
-        }
-        //static void Func()
-        //{
-        //    int x = 1;
-        //    while (x <= 10)
-        //    {
-        //        Console.WriteLine(x);
-        //        x++;
-        //    }
-        //}
 
-        //static void Func()
-        //{
-        //    int x = 1;
-        //    do
-        //    {
-        //        Console.WriteLine(x);
-        //        x++;
-        //    }
-        //    while (x <= 10);
-        //}
+            Func();
+            Console.ReadLine();
+        }
 
         static void Func()
         {
-            
-            for (int x = 10; x >= 1 ; x--)
+            for (int x = 1; x <= 5; x++)
             {
-                Console.WriteLine(x);
+                Console.WriteLine("Привет!");
             }
         }
     }
